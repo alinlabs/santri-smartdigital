@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background: Emerald 500 -->
+  <rect width="64" height="64" rx="16" fill="#10b981"/>
+  
+  <!-- Crescent Moon: White/Light Emerald -->
+  <path d="M38 14C32 14 26 18 26 26C26 36 34 44 44 44C49 44 52 42 54 40C50 50 40 56 28 54C18 52 12 42 14 30C16 22 22 16 30 14C32 13 36 13 38 14Z" fill="#ecfdf5"/>
+  
+  <!-- Star: Gold -->
+  <path d="M48 12L50 18L56 19L51 23L52 29L48 26L44 29L45 23L40 19L46 18L48 12Z" fill="#fbbf24"/>
+</svg>

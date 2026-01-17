@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pesan - Santri SmartDigital</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f4f4f4; color: #333333; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .header { background: linear-gradient(135deg, #059669 0%, #10b981 100%); padding: 40px 20px; text-align: center; color: #ffffff; }
+        .header h1 { margin: 0; font-size: 24px; font-weight: 700; letter-spacing: 1px; }
+        .header p { margin: 5px 0 0; opacity: 0.9; font-size: 14px; }
+        .content { padding: 40px 30px; }
+        .message-box { background-color: #ecfdf5; border-left: 4px solid #10b981; padding: 20px; border-radius: 8px; margin: 20px 0; font-style: italic; color: #065f46; }
+        .details-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .details-table td { padding: 12px 0; border-bottom: 1px solid #eee; font-size: 14px; }
+        .details-table td:first-child { font-weight: bold; color: #555; width: 40%; }
+        .footer { background-color: #064e3b; color: #a7f3d0; padding: 30px; text-align: center; font-size: 12px; }
+        .button { display: inline-block; background-color: #059669; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 50px; font-weight: bold; margin-top: 20px; }
+        @media only screen and (max-width: 600px) {
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Santri SmartDigital</h1>
+            <p>Solusi Digitalisasi Pondok Pesantren</p>
+        </div>
+
+        <!-- Body -->
+        <div class="content">
+            <h2 style="color: #111827; margin-top: 0;">Assalamu'alaikum, {{to_name}}</h2>
+            <p style="line-height: 1.6; color: #4b5563;">
+                Terima kasih telah menghubungi kami. Pesan Anda telah kami terima dan tim support kami akan segera mempelajarinya.
+            </p>
+            <p style="line-height: 1.6; color: #4b5563;">
+                Insya Allah kami akan menghubungi Anda melalui WhatsApp di nomor <strong>{{phone}}</strong> dalam waktu 1x24 jam kerja.
+            </p>
+
+            <!-- Message Summary -->
+            <div class="message-box">
+                "{{message}}"
+            </div>
+
+            <table class="details-table">
+                <tr>
+                    <td>Nama Pesantren</td>
+                    <td>{{pesantren}}</td>
+                </tr>
+                <tr>
+                    <td>Email Terdaftar</td>
+                    <td>{{to_email}}</td>
+                </tr>
+                <tr>
+                    <td>Status Tiket</td>
+                    <td><span style="background-color: #d1fae5; color: #065f46; padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: bold;">DITERIMA</span></td>
+                </tr>
+            </table>
+
+            <center>
+                <a href="https://wa.me/6281807000054" class="button">Hubungi Admin via WhatsApp</a>
+            </center>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 AlinLabs Indonesia. All rights reserved.</p>
+            <p>Purwakarta, Jawa Barat, Indonesia</p>
+            <p style="margin-top: 10px; opacity: 0.6;">Email ini dikirim secara otomatis, mohon tidak membalas email ini.</p>
+        </div>
+    </div>
+    <br>
+</body>
+</html>
